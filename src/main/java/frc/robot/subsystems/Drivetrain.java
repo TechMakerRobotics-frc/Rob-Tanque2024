@@ -138,8 +138,8 @@ public class Drivetrain extends SubsystemBase {
 
     final var rot = rotation;//m_rotLimiter.calculate(rotation);
 
-    SmartDashboard.putNumber("Potencia Frente (%)", xSpeed * 100.0);
-    SmartDashboard.putNumber("Potencia Curva (%)", rot * 100.0);
+    SmartDashboard.putNumber("Potencia Frente (%)", xSpeed * 40);
+    SmartDashboard.putNumber("Potencia Curva (%)", rot * 40);
 
     /*
      * Volta positiva = Anti horario, esquerda vai para tras
@@ -163,8 +163,8 @@ public class Drivetrain extends SubsystemBase {
 
   public void arcadeDrive(double forward, double rotation) {
 
-    SmartDashboard.putNumber("Potencia Frente (%)", forward * 100.0);
-    SmartDashboard.putNumber("Potencia Curva (%)", rotation * 100.0);
+    SmartDashboard.putNumber("Potencia Frente (%)", forward * 40.0);
+    SmartDashboard.putNumber("Potencia Curva (%)", rotation * 40.0);
     m_diffDrive.arcadeDrive(forward, rotation);
     m_diffDrive.feed();
 

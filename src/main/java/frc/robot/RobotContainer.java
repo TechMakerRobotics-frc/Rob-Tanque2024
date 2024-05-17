@@ -38,7 +38,7 @@ public class RobotContainer {
 
     //Seta a navegação padrão pelo  controle
      drive.setDefaultCommand(new RunCommand(()->drive.setDriveMotors(driver.getLeftY()*-1, 
-                              driver.getLeftX()*-1), drive));
+                              driver.getRightX()*-1), drive));
    
    
 
@@ -48,7 +48,7 @@ public class RobotContainer {
     
   }
     public Command getAutonomousCommand() {
-    return null;
+    return null;m
     }
 }
 
